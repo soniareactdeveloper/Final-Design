@@ -1,0 +1,119 @@
+/* General styles for the registration section */
+.registerSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url(../../../public/images/Background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Title style */
+.registerTitle {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+  animation: popUp 1.5s ease forwards;
+}
+
+/* Input wrapper style */
+.inputWrapper {
+  margin-bottom: 1rem;
+  position: relative;
+  width: 100%; /* Full width for all devices */
+}
+
+/* Input field style */
+.inputField {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Error text style */
+.errorText {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+/* Show password button style */
+.showPasswordButton {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #3b82f6;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.showPasswordButton:hover {
+  color: #2563eb;
+}
+
+/* Register button style */
+.registerButton {
+  width: 100%;
+  padding: 0.75rem;
+  background: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.registerButton:hover {
+  background: #2563eb;
+}
+
+/* Additional links style */
+.additionalLinks {
+  margin-top: 1rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .formContainer {
+    padding: 20px; /* Add some padding for smaller screens */
+    width: 90%; /* Use more width on smaller screens */
+  }
+
+  .registerTitle {
+    font-size: 1.5rem; /* Slightly smaller title */
+  }
+
+  .inputField {
+    font-size: 0.9rem; /* Smaller font size for input fields */
+  }
+
+  .registerButton {
+    font-size: 0.9rem; /* Smaller font size for the register button */
+  }
+
+  .showPasswordButton {
+    font-size: 0.8rem; /* Smaller font size for show/hide button */
+  }
+}
+
+@media (max-width: 480px) {
+  .registerTitle {
+    font-size: 1.3rem; /* Even smaller title on very small screens */
+  }
+
+  .inputField {
+    padding: 0.5rem; /* Reduce padding for input fields */
+  }
+
+  .registerButton {
+    padding: 0.5rem; /* Reduce padding for the register button */
+  }
+}
